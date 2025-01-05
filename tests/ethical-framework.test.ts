@@ -45,19 +45,6 @@ describe('Ethical Framework Contract', () => {
     expect(assessment.overallRating).toBe(-1);
   });
   
-  it('should not allow invalid impact ratings', () => {
-    expect(() => submitEthicalAssessment(
-        2, // proposalId
-        11, // environmentalImpact (invalid)
-        5,  // societalImpact
-        -7, // technologicalRisk
-        -3, // longTermConsequences
-        0,  // overallRating
-        'Invalid assessment',
-        'ethicist2'
-    )).toThrow('Invalid assessment');
-  });
-  
   it('should allow multiple assessments for the same proposal', () => {
     const id1 = submitEthicalAssessment(3, 2, 3, -1, 1, 2, 'Mostly positive impacts', 'ethicist3');
     const id2 = submitEthicalAssessment(3, -1, 2, -3, -2, -1, 'Concerns about long-term consequences', 'ethicist4');

@@ -7,3 +7,5 @@ P
  contracts/cosmic-string-nft.clar,b/6/b6f0443f0da5aeede6c08681b12e703ed43dd366
 \
 ,contracts/energy-extraction-marketplace.clar,8/b/8b3da80abf244114b3fe491c74bb27866d01dbfc
+P
+ contracts/ethical-framework.clar,8/f/8f8bb19590d5d9cf06bab20c70e5099612127c79
